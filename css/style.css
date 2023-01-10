@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(30, 36, 24, 1);
+    height: 100vh;
+}
+
+
+/* HEADER */
+.header{
+    background-color: rgba(49, 49, 49, 1);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    box-shadow: 1px 2px 3px;
+    overflow: hidden;
+}
+
+.header a h2{
+    display: flex;
+    justify-items: flex-start;
+}
+
+.item-header{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.titulo-navbar{
+    text-decoration: none;
+    margin-left: 50px;
+    width: 700px;
+    color: rgba(253, 241, 208, 1);
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 40px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.item-navbar{
+    justify-items: center;
+    font-family: "Bebas Neue", cursive;
+    font-size: 24px;
+    color: rgba(253, 241, 208, 1);
+    margin-left: 300px;
+    width: fit-content;
+}
+
+
+/* FOOTER */
+footer img{
+    width: 40px;
+}
+.footer{
+    background-color: rgba(49, 49, 49, 1);
+    height: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/* MAIN INDEX */
+
+.ContainerIndex{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto;
+}
+.ContainerIndex img{
+    height: 100%;
+    width: 100%;
+}
+.ContainerIndex h1{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    color: rgba(177, 127, 95, 1);
+    font-family: "Big Shoulders Display", cursive;
+    background-color: black;
+}
+
+
+
+.ContainerIndex p{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", cursive;
+    font-size: 100px;
+    background-color: rgba(177, 127, 95, 1);
+}
+
+
+/* MAIN MENU */
+
+.entradas{
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    color: rgba(253, 241, 208, 1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.pizza{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    
+    "titpizza titpizza titpizza"
+    "subpizza subpizza subpizza"
+    "pizzapic pizzapic pizzapic"
+    ;
+}
+.titpizza{
+    display: grid;
+    justify-items: center;
+    grid-area: titpizza;
+    color: rgba(253, 241, 208, 1);
+    font-family: "Oswald", cursive;
+}
+.subpizza{
+        display: grid;
+    justify-items: center;
+    grid-area: subpizza;
+    color: rgba(253, 241, 208, 1);
+    font-family: "Oswald", cursive;
+}
+.pizzapic{
+    margin-left: 630px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    grid-area: pizzapic;
+}
+
+
+.rabas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    
+    "titrabas titrabas titrabas"
+    "subrabas subrabas subrabas"
+    "rabaspic rabaspic rabaspic"
+    ;
+}
+.titrabas{
+    display: grid;
+    justify-items: center;
+    grid-area: titrabas;
+    color: rgba(253, 241, 208, 1);
+    font-family: "Oswald", cursive;
+}
+.subrabas{
+    display: grid;
+    justify-items: center;
+    grid-area: subrabas;
+    color: rgba(253, 241, 208, 1);
+    font-family: "Oswald", cursive;
+}
+.rabaspic{
+    grid-area: rabaspic;
+    margin-left: 630px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+.rabas img{
+    width: 650px;
+    height: 600px;
+}
+
+.pizza img{
+    width: 650px;
+    height: 600px;
+}
+
+
+/* MAIN EVENTOS */
+
+.TituloEventos{
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    color: rgba(253, 241, 208, 1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.SubEventos{
+    font-family: "Oswald", cursive;
+}
+
+.MainEventos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 600px 100px;
+    grid-template-areas: 
+
+    "TrioJazz TrioJazz Piano Piano"
+    "Julian Julian Gabriel Gabriel"
+    ;
+}
+
+.Julian{
+    grid-area: Julian;
+    display: grid;
+    justify-items: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Gabriel{
+    grid-area: Gabriel;
+    display: grid;
+    justify-items: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.TrioJazz{
+    grid-area: TrioJazz;
+    margin-left: 180px;
+}
+
+.Piano{
+    grid-area: Piano;
+    margin-left: 180px;
+}
+
+.MainEventos img{
+    width: 600px;
+    height: 100%;
+}
+
+/* MAIN BEBIDAS */
+.TituloBebidas{
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    color: rgba(253, 241, 208, 1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.BlueLabel{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 700px;
+    grid-template-areas: 
+    
+    "h2 h2 h2"
+    "p p p"
+    "img img img"
+    ;
+}
+
+.BlueLabel h2{
+    grid-area: h2;
+    display: grid;
+    justify-items: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+}
+
+.BlueLabel p{
+    grid-area: p;
+    display: grid;
+    justify-items: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+    text-align: center;
+}
+
+.BlueLabel img{
+    grid-area: img;
+    width: 800px;
+    height: 650px;
+    margin-top: 40px;
+    margin-left: 550px;
+}
+
+
+.Gin{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 700px;
+    grid-template-areas: 
+    
+    "h2 h2 h2"
+    "p p p"
+    "img img img"
+    ;
+}
+
+.Gin h2{
+    grid-area: h2;
+    display: grid;
+    justify-items: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+}
+
+.Gin p{
+    grid-area: p;
+    display: grid;
+    justify-items: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+    text-align: center;
+}
+
+.Gin img{
+    grid-area: img;
+    width: 800px;
+    height: 650px;
+    margin-top: 40px;
+    margin-left: 550px;
+}
+
+
+.Beer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 700px;
+    grid-template-areas: 
+    
+    "h2 h2 h2"
+    "p p p"
+    "img img img"
+    ;
+}
+
+.Beer h2{
+    grid-area: h2;
+    display: grid;
+    justify-items: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+}
+
+.Beer p{
+    grid-area: p;
+    display: grid;
+    justify-items: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+    text-align: center;
+}
+
+.Beer img{
+    grid-area: img;
+    width: 800px;
+    height: 650px;
+    margin-top: 40px;
+    margin-left: 550px;
+}
+
+
+.Champagne{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 700px;
+    grid-template-areas: 
+    
+    "h2 h2 h2"
+    "p p p"
+    "img img img"
+    ;
+}
+
+.Champagne h2{
+    grid-area: h2;
+    display: grid;
+    justify-items: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+}
+
+.Champagne p{
+    grid-area: p;
+    display: grid;
+    justify-items: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+    text-align: center;
+}
+
+.Champagne img{
+    grid-area: img;
+    width: 800px;
+    height: 650px;
+    margin-top: 40px;
+    margin-left: 550px;
+}
+
+/* MAIN CONTACTO */
+
+.MainContacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.MainContacto img{
+    width: 100%;
+    height: 100%;
+}
+
+.ContainerContacto{
+    margin-top: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 120px);
+    grid-template-areas: 
+    
+    "h1 h1 h1 h1"
+    "h2 h2 h2 h2"
+    "p p p p"
+    ;
+}
+
+.H1Contacto{
+    grid-area: h1;
+    text-align: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+    font-size: 100px;
+}
+
+.H2Contacto{
+    grid-area: h2;
+    text-align: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+    font-size: 70px;
+}
+
+.PContacto{
+    grid-area: p;
+    text-align: center;
+    font-family: "Oswald", cursive;
+    color: rgba(253, 241, 208, 1);
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .header{
+        background-color: aqua;
+    }
+}
+
+
