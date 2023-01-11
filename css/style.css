@@ -464,19 +464,89 @@ footer img{
 }
 
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px){
-    .header{
-        background-color: aqua;
+    @media (max-width: 320px){
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
-}
+
+
+
+/* MAIN INDEX MOBILE */
+
+    .header h2{
+        font-size: 20px;
+        justify-items: center;
+        margin-left: -30px;
+    }
+
+    .titulo-navbar{
+        justify-items: center;
+    }
+
+    .item-navbar{
+        margin-left: 30px;
+        font-size: 10px;
+    }
+
+    .footer{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: auto;
+    }
+    .footer img{
+        grid-template-columns: 10px 10px 10px;
+        width: 20px;
+    }
+
+
+
+    .ContainerIndex{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "h1 h1 h1"
+        "p p p "
+        ;
+        height: 100vh;
+    }
+
+    .ContainerIndex h1{
+        font-size: 20px;
+        grid-area: h1;
+    }
+    .ContainerIndex p{
+        font-size: 20px;
+        grid-area: p;
+    }
+
+    .ContainerIndex img{
+        width: 320px;
+    }
+
+
+
+/* MAIN INDEX CONTACTO */
+
+    .ContainerContacto{
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .H1Contacto{
+        font-size: 20px;
+    }
+
+    .H2Contacto{
+        font-size: 20px;
+    }
+
+    .PContacto{
+        font-size: 10px;
+    }
+    
+    }
+
 
 
