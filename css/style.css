@@ -545,7 +545,9 @@ footer img{
     .PContacto{
         font-size: 10px;
     }
-    
+    .footer{
+        margin-bottom: 0;
+    }
     }
 
 
